@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <assets-table />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AssetsTable from "./components/AssetsTable.vue";
+import store from "./store";
 export default {
-  name: 'App',
+  name: "App",
+  store,
   components: {
-    HelloWorld
+    AssetsTable
   }
-}
+};
 </script>
 
 <style>
